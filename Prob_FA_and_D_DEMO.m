@@ -1,3 +1,10 @@
+% Probability of False Alarm and Detection Demo
+%   MATLAB m-file
+%   Author: Terry Kong
+%   Variables: 
+%       A = constant signal, vt = threshold voltage, ymin = plot lower bound, 
+%       ymax = plot upper bound, orange = colormap for orange, n = plot resolution, 
+
 % Pd and Pfa Determined Numerically by running a time domain simulation 
 % Generate noise and signals for SNR=13dB 
 clear all; clc; orange = [1,0.5,0.2];
@@ -8,7 +15,7 @@ A = 5;
 ymin = -0.2;
 ymax = 0.4;
 % Determine the probabilities for different thresholds 
-vt=3; vty = linspace(-0.2,0.4,100); vtx = zeros(size(vty));
+vt=3; vty = linspace(ymin,ymax,100); vtx = zeros(size(vty));
 n = 100000;
 
 a = (1:n); 
