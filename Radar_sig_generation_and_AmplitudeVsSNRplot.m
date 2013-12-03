@@ -1,9 +1,22 @@
-% Probability of False Alarm and Detection Demo
+% Generation of Sample Radar Signal and a plot of SNR vs Amplitude with varying noise power
 %   MATLAB m-file
 %   Author: Terry Kong
+%   Radar Signal Characteristics:
+%       Range(m) = 92600.00, Range(nm) = 50.00
+%       Resoluion(dR or deltaR)[in meters] = 154.33
+%       Number of Cells = 600
+%       Pulse Width(us) = 1.03
+%       Interpulse Period(ms) = 0.60
+%       Signal Amplitude = 100.00
+%       Standard Deviation of Noise = 1.00
 %   Variables: 
-%       A = constant signal, vt = threshold voltage, ymin = plot lower bound, 
-%       ymax = plot upper bound, orange = colormap for orange, n = plot resolution
+%       Anbins = number of bins for plots, 
+%       rangemax = max range considered,
+%       ncells = number of cells in ATD, 
+%       Tinter = interpulse period
+%       timemax = max time period looked at, 
+%       sig_amp = target amplitude(not considering range)
+%       sig = standard deviation of [Gaussian] noise (related to power of noise)
 
 clear all; clc; figure(1); clf;
 %Constants
