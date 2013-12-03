@@ -2,8 +2,12 @@
 %   MATLAB m-file
 %   Author: Terry Kong
 %   Variables: 
-%       A = constant signal, vt = threshold voltage, ymin = plot lower bound, 
-%       ymax = plot upper bound, orange = colormap for orange, n = plot resolution, 
+%       A = constant signal, 
+%       vt = threshold voltage, 
+%       ymin = plot lower bound, 
+%       ymax = plot upper bound, 
+%       orange = colormap for orange, 
+%       n = plot resolution, 
 
 % Pd and Pfa Determined Numerically by running a time domain simulation 
 % Generate noise and signals for SNR=13dB 
